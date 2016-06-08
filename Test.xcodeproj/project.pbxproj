@@ -12,6 +12,10 @@
 		F47C7B781D08747500EE876B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47C7B761D08747500EE876B /* Main.storyboard */; };
 		F47C7B7A1D08747500EE876B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47C7B791D08747500EE876B /* Assets.xcassets */; };
 		F47C7B7D1D08747500EE876B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47C7B7B1D08747500EE876B /* LaunchScreen.storyboard */; };
+		F47C7B851D08758400EE876B /* UIImageView+Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47C7B841D08758400EE876B /* UIImageView+Words.swift */; };
+		F47C7B871D08822500EE876B /* helpfulExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47C7B861D08822500EE876B /* helpfulExtensions.swift */; };
+		F47C7B891D08933B00EE876B /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47C7B881D08933B00EE876B /* PasswordTextField.swift */; };
+		F47C7B8B1D08AD6500EE876B /* ListingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47C7B8A1D08AD6500EE876B /* ListingController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		F47C7B791D08747500EE876B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F47C7B7C1D08747500EE876B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F47C7B7E1D08747500EE876B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F47C7B841D08758400EE876B /* UIImageView+Words.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Words.swift"; sourceTree = "<group>"; };
+		F47C7B861D08822500EE876B /* helpfulExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = helpfulExtensions.swift; sourceTree = "<group>"; };
+		F47C7B881D08933B00EE876B /* PasswordTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
+		F47C7B8A1D08AD6500EE876B /* ListingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +65,10 @@
 				F47C7B721D08747500EE876B /* AppDelegate.swift */,
 				F47C7B741D08747500EE876B /* ViewController.swift */,
 				F47C7B761D08747500EE876B /* Main.storyboard */,
+				F47C7B8A1D08AD6500EE876B /* ListingController.swift */,
+				F47C7B841D08758400EE876B /* UIImageView+Words.swift */,
+				F47C7B861D08822500EE876B /* helpfulExtensions.swift */,
+				F47C7B881D08933B00EE876B /* PasswordTextField.swift */,
 				F47C7B791D08747500EE876B /* Assets.xcassets */,
 				F47C7B7B1D08747500EE876B /* LaunchScreen.storyboard */,
 				F47C7B7E1D08747500EE876B /* Info.plist */,
@@ -135,7 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F47C7B891D08933B00EE876B /* PasswordTextField.swift in Sources */,
 				F47C7B751D08747500EE876B /* ViewController.swift in Sources */,
+				F47C7B851D08758400EE876B /* UIImageView+Words.swift in Sources */,
+				F47C7B871D08822500EE876B /* helpfulExtensions.swift in Sources */,
+				F47C7B8B1D08AD6500EE876B /* ListingController.swift in Sources */,
 				F47C7B731D08747500EE876B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,6 +269,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.optikkandr.eyegenie.Test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -264,6 +281,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.optikkandr.eyegenie.Test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
