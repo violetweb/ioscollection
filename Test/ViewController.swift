@@ -56,13 +56,16 @@ class ViewController: UIViewController {
         
         
         //GRADIENT BACKGROUND
-         mainView.setBackgroundGradient(UIColor(red: 1.0/255.0, green: 235.0/255.0, blue: 184.0/255.0, alpha: 1.0), color2: UIColor(red: 17.0/255.0, green: 62.0/255.0, blue: 100.0/255.0, alpha: 1.0))
+         mainView.setBackgroundGradient(UIColor(red: 6.0/255.0, green: 85.0/255.0, blue: 163.0/255.0, alpha: 1.0), color2: UIColor(red: 7.0/255.0, green: 146.0/255.0, blue: 205.0/255.0, alpha: 1.0))
         
         //CREATE ACCOUNT BUTTON
         let newcolor = UIColor(red: 1.0/255.0, green: 235.0/255.0, blue: 184.0/255.0, alpha: 1.0).CGColor
-        createAccountButton.layer.backgroundColor = newcolor
+        createAccountButton.layer.backgroundColor = UIColor.whiteColor().CGColor
         createAccountButton.layer.cornerRadius = 10
-        createAccountButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        createAccountButton.setTitleColor(UIColor(red: 6.0/255.0, green: 85.0/255.0, blue: 163.0/255.0, alpha: 1.0), forState: .Normal)
+        createAccountButton.layer.shadowRadius = 10
+        createAccountButton.layer.shadowOffset = CGSize(width: createAccountButton.bounds.size.width + 20,height: createAccountButton.bounds.size.height+20)
+        createAccountButton.layer.shadowColor = newcolor
         let fontAttributes = [NSForegroundColorAttributeName : UIColor.blueColor(),
             NSFontAttributeName : UIFont.systemFontOfSize(40)  ]
 

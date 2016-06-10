@@ -16,6 +16,8 @@
 		F47C7B871D08822500EE876B /* helpfulExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47C7B861D08822500EE876B /* helpfulExtensions.swift */; };
 		F47C7B891D08933B00EE876B /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47C7B881D08933B00EE876B /* PasswordTextField.swift */; };
 		F47C7B8B1D08AD6500EE876B /* ListingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47C7B8A1D08AD6500EE876B /* ListingController.swift */; };
+		F4E378B51D0A1060004CC3C1 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = F4E378B41D0A1060004CC3C1 /* data.json */; };
+		F4E631CB1D09CAAD000FC91B /* CustomTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E631CA1D09CAAD000FC91B /* CustomTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		F47C7B861D08822500EE876B /* helpfulExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = helpfulExtensions.swift; sourceTree = "<group>"; };
 		F47C7B881D08933B00EE876B /* PasswordTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 		F47C7B8A1D08AD6500EE876B /* ListingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingController.swift; sourceTree = "<group>"; };
+		F4E378B41D0A1060004CC3C1 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		F4E631CA1D09CAAD000FC91B /* CustomTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 		F47C7B711D08747500EE876B /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				F4E378B31D0A0258004CC3C1 /* Data */,
 				F47C7B721D08747500EE876B /* AppDelegate.swift */,
 				F47C7B741D08747500EE876B /* ViewController.swift */,
 				F47C7B761D08747500EE876B /* Main.storyboard */,
@@ -69,11 +74,20 @@
 				F47C7B841D08758400EE876B /* UIImageView+Words.swift */,
 				F47C7B861D08822500EE876B /* helpfulExtensions.swift */,
 				F47C7B881D08933B00EE876B /* PasswordTextField.swift */,
+				F4E631CA1D09CAAD000FC91B /* CustomTableCell.swift */,
 				F47C7B791D08747500EE876B /* Assets.xcassets */,
 				F47C7B7B1D08747500EE876B /* LaunchScreen.storyboard */,
 				F47C7B7E1D08747500EE876B /* Info.plist */,
 			);
 			path = Test;
+			sourceTree = "<group>";
+		};
+		F4E378B31D0A0258004CC3C1 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F4E378B41D0A1060004CC3C1 /* data.json */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,6 +122,7 @@
 				TargetAttributes = {
 					F47C7B6E1D08747500EE876B = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = T2RL2JEHX4;
 					};
 				};
 			};
@@ -137,6 +152,7 @@
 				F47C7B7D1D08747500EE876B /* LaunchScreen.storyboard in Resources */,
 				F47C7B7A1D08747500EE876B /* Assets.xcassets in Resources */,
 				F47C7B781D08747500EE876B /* Main.storyboard in Resources */,
+				F4E378B51D0A1060004CC3C1 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +169,7 @@
 				F47C7B871D08822500EE876B /* helpfulExtensions.swift in Sources */,
 				F47C7B8B1D08AD6500EE876B /* ListingController.swift in Sources */,
 				F47C7B731D08747500EE876B /* AppDelegate.swift in Sources */,
+				F4E631CB1D09CAAD000FC91B /* CustomTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +282,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.optikkandr.eyegenie.Test;
@@ -277,6 +295,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.optikkandr.eyegenie.Test;
@@ -304,6 +323,7 @@
 				F47C7B831D08747500EE876B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
